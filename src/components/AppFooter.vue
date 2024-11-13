@@ -2,26 +2,26 @@
 export default {
   data() {
     return { 
-      message: 'Vite Boolfolio'
+      message: 'Footer'
     }
   }
 }
 </script>
 
 <template>
-  <header>
+  <footer>
     <div class="container">
       <h1>
       {{ message }}
       </h1>
     </div>
-  </header>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-header {
+footer {
   background-color: $mainBgColor;
   text-align: center;
   padding: 20px 0;

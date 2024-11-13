@@ -1,0 +1,58 @@
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return { 
+      
+      projects: []
+    };
+  },
+  mounted() {
+    this.getProjects();
+  },
+
+  methods: {
+    getProjects() {
+      axios 
+        .get('http://127.0.0.1:8000/api/projects')
+        .then((res) => {
+          
+          this.projects = res.data.projects;
+          console.log(this.projects);
+        });
+    }
+  }
+}
+</script>
+
+<template>
+  <main>
+    <div class="container">
+      <div class="projects-container">
+        <div v-for="projects in projects" :key="projects.id">
+          <h3>
+            {{ projects.title }}
+          </h3>
+          <h5>
+            {{ projects.creation_date }}
+          </h5>
+        </div>
+      </div>
+    </div>
+  </main>
+</template>
+
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
+main {
+  background-color: $mainBgColor;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  color: $mainColor;
+}
+</style>
