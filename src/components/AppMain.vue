@@ -34,9 +34,17 @@ export default {
           <h3>
             {{ projects.title }}
           </h3>
+
           <h5>
             {{ projects.creation_date }}
           </h5>
+
+          <div class="author-container">
+            <h6>
+              {{ projects.author }}
+            </h6>
+          </div>
+
         </div>
       </div>
     </div>
@@ -55,4 +63,6 @@ main {
 h1 {
   color: $mainColor;
 }
+
+
 </style>
