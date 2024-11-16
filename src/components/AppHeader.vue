@@ -19,7 +19,7 @@ export default {
 
     <div class="container text-center">
       <div class="row">
-        
+
         <div class="col">
           <router-link :to="{ name: 'home' }" class="nav-link">
               Home
@@ -84,9 +84,9 @@ h1 {
   padding: 20px 0;
 }
 
-ul li {
-  display: flex;
-  justify-content: center;
-}
+// ul li {
+//   display: flex;
+//   justify-content: center;
+// }
 
 </style>

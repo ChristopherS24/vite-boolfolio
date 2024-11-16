@@ -11,7 +11,6 @@ export default {
 
     <router-view></router-view>
 
-
   </main>
 </template>
 
@@ -22,6 +21,7 @@ main {
   background-color: $mainBgColor;
   text-align: center;
   padding: 20px 0;
+  height: 100%;
 }
 
 h1 {

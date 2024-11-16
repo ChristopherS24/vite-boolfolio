@@ -37,12 +37,7 @@ export default {
     <AppHeader />
     <AppMain />
     <AppFooter />
-    
-    <main>
-      <!-- <button class="btn btn-primary" @click="incrementCount()">
-        {{ count }}
-      </button> -->
-    </main>
+
   </div>
 </template>
 
